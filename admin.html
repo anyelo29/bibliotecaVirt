@@ -1,0 +1,45 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>administración de la biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>bienvanido a la bilbioteca virtual de lirbos raros y antiguos </h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">inicio</a></li>
+                <li> <a href="books.html">libros disponibles</a></li>
+                <li> <a href="admin.html">administración</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="admin-panel">
+        <h2>gestion libros</h2>
+        <form action="/add-book" method="POST">
+            <label for="title">titulo el libro:</label>
+            <input type="text" name="autor" name="title" required>
+
+            <label for="author">autor:</label>
+            <input type="text" name="autor" name="title" required>
+
+            <label for="year">año de publicacion:</label>
+            <input type="number" name="year" name="year" required>
+
+            <label for="status">estado:</label>
+                <section name="status" id="status">
+                <option value="disponible">disponible</option>
+                <option value="prestado">prestado</option>
+                <option value="reservado">reservado</option>
+            </section>
+
+            <button type="submit">agregar libro</button>
+        </form>
+
+        
+    </section>
+</body>
+</html>
